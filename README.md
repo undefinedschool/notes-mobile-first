@@ -55,6 +55,5 @@ _tendencia_ dentro del dise√±o responsive, en la que **primero pensamos el dise√
 ### mobile-friendly tests
 
 - usar las dev tools del browser para testear en diferentes resoluciones.
-- https://search.google.com/test/mobile-friendly
 - https://bluetree.ai/screenfly/
 - https://responsively.app/
