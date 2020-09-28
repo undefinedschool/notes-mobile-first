@@ -9,7 +9,7 @@ técnica de maquetado que tiene el objetivo de desarrollar versiones _adaptables
 - responsive images
 - media-queries
 
-Hoy en día el diseño responsive no es in plus, es un _requisito_.
+Hoy en día el diseño responsive no es un plus, es un _requisito_.
 
 ### ventajas
 
