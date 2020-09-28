@@ -57,4 +57,4 @@ _tendencia_ dentro del dise√±o responsive, en la que **primero pensamos el dise√
 - usar las dev tools del browser para testear en diferentes resoluciones.
 - https://search.google.com/test/mobile-friendly
 - https://bluetree.ai/screenfly/
-- responsiveley app
+- responsively app
