@@ -9,6 +9,8 @@ técnica de maquetado que tiene el objetivo de desarrollar versiones _adaptables
 - responsive images
 - media-queries
 
+Hoy en día el diseño responsive no es in plus, es un _requisito_.
+
 ### ventajas
 
 - se reducen mucho los tiempos y costos de implementación
@@ -21,15 +23,35 @@ _tendencia_ dentro del diseño responsive, en la que **primero pensamos el dise�
 
 ### ventajas
 
-- mejor UX: **el tráfico mobile de los sitios supera al del resto de los dispositivos** (analytics: google analytics, plausible, simple analytics, https://umami.is/, fullstory/hotjar)
-- favorece el SEO (Google) vs _desktop-first_
+- mejor UX: **el tráfico mobile de los sitios supera al del resto de los dispositivos** (analytics: google analytics, plausible, simple analytics, https://umami.is/, fullstory/hotjar).
+- favorece el SEO (Google) vs _desktop-first_.
+- es más difícil simplificar una versión desktop a mobile que pasar de mobile a desktop. Diseñar para mobile suele ser más difícil, por lo que tomamos decisiones sobre qué contenido es el más importante al principio, ahorrando tiempo después.
+- al cargar inicialmente sólo el CSS necesario para mobile, la carga del sitio es más rápida.
 
 ### cómo implementamos mobile-first
 
-- media-queries: nos permiten setear diferentes condiciones basadas en [_breakpoints_](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), a partir de las cuales aplicamos diferentes estilos (width, height, orientation, color-scheme, etc)
+- **media-queries:** nos permiten setear diferentes condiciones basadas en [_breakpoints_](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), a partir de las cuales aplicamos diferentes estilos (width, height, orientation, color-scheme, etc)
+- **breakpoints:** es un 'punto' o condición determinada en la que el contenido/diseño de un sitio se va a adaptar de cierta forma, para mejorar la UX.
+
+### breakpoints más comunes
+
+[A Guide to Responsive Breakpoints ~ 2020](https://uxtricks.design/blogs/ux-design/responsive-design/)
 
 ### tips
 
+- en mobile tenemos menos espacio (screen size) disponible para el contenido que queremos mostrar, por lo que nos fuerza a planificar mejor previamente (wireframes) y pensar cuáles son las _core features_ (mvp) que necesitamos
+- en mobile los requisitos de les usuaries pueden ser diferentes, en cuanto a contenido y ux (tmb tablets). De nuevo, cobra mucha importancia la planificación previa y pensar diferentes escenarios, no se trata simplemente de aplicar media queries para cmabiar la orientación de un layout, puede cambiar el contexto y el contenido.
 - tener en cuenta que aplica la regla de la cascada a la hora se setear los diferentes breakpoints
-- usar las dev tools del browser
+- cuidar la legibilidad del contenido: si el texto se vuelve difícil de leer o se altera mucho el flujo/queda desalineado, agregar un breakpoint para cambiar el tamaño y optimizar las tipografías para la lectura
+  - es preferible usar `rem` a `em` para trabajar con textos.
+- usar herramientas de _analytics_ para tener insights y métricas sobre qué resoluciones deberíamos priorizar, testear en las mismas y si es necesario, agregar los breakpoints correspondientes.
+- en mobile, testear tmb en landscape, no sólo en vertical.
+- una técnica común es mostrar/ocultar ciertos elementos en ciertos breakpoints.
+- asegurarse de que los botones son fáciles de usar en mobile.
+
+### mobile-friendly tests
+
+- usar las dev tools del browser para testear en diferentes resoluciones.
+- https://search.google.com/test/mobile-friendly
+- https://bluetree.ai/screenfly/
 - responsiveley app
