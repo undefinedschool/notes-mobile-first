@@ -39,15 +39,18 @@ _tendencia_ dentro del diseño responsive, en la que **primero pensamos el dise�
 
 ### tips
 
-- en mobile tenemos menos espacio (screen size) disponible para el contenido que queremos mostrar, por lo que nos fuerza a planificar mejor previamente (wireframes) y pensar cuáles son las _core features_ (mvp) que necesitamos
+- en mobile tenemos menos espacio (screen size) disponible para el contenido que queremos mostrar, por lo que nos fuerza a planificar mejor previamente (wireframing & prototyping) y **pensar cuáles son las _core features_ (mvp) que necesitamos**
 - en mobile los requisitos de les usuaries pueden ser diferentes, en cuanto a contenido y ux (tmb tablets). De nuevo, cobra mucha importancia la planificación previa y pensar diferentes escenarios, no se trata simplemente de aplicar media queries para cmabiar la orientación de un layout, puede cambiar el contexto y el contenido.
 - tener en cuenta que aplica la regla de la cascada a la hora se setear los diferentes breakpoints
-- cuidar la legibilidad del contenido: si el texto se vuelve difícil de leer o se altera mucho el flujo/queda desalineado, agregar un breakpoint para cambiar el tamaño y optimizar las tipografías para la lectura
+- **cuidar la legibilidad del contenido**: si el texto se vuelve difícil de leer o se altera mucho el flujo/queda desalineado, agregar un breakpoint para cambiar el tamaño y optimizar las tipografías para la lectura
   - es preferible usar `rem` a `em` para trabajar con textos.
 - usar herramientas de _analytics_ para tener insights y métricas sobre qué resoluciones deberíamos priorizar, testear en las mismas y si es necesario, agregar los breakpoints correspondientes.
 - en mobile, testear tmb en landscape, no sólo en vertical.
 - una técnica común es mostrar/ocultar ciertos elementos en ciertos breakpoints.
-- asegurarse de que los botones son fáciles de usar en mobile.
+- **usar imágenes de menor resolución para mobile.**
+  - UX tmb implica que el sitio cargue rápido (performance), PNGs y JPGs escalan en cuanto a tamaño, pero el filesize se mantiene. Lo mejor es usar diferentes versiones de las mismas imágenes, según el target.
+  - usando SVGs cuando sea posible (ej: íconos) evitamos la necesidad de múltiples versiones de la misma imagen
+- **asegurarse de que los botones son fáciles de usar en mobile.**
 
 ### mobile-friendly tests
 
