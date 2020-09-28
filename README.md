@@ -23,7 +23,7 @@ _tendencia_ dentro del diseño responsive, en la que **primero pensamos el dise�
 
 ### ventajas
 
-- mejor UX: **el tráfico mobile de los sitios supera al del resto de los dispositivos** (analytics: google analytics, plausible, simple analytics, https://umami.is/, fullstory/hotjar).
+- mejor UX: **el tráfico mobile de los sitios supera al del resto de los dispositivos** (analytics: google analytics, plausible.io, simpleanalytics.com, https://umami.is/, fullstory/hotjar).
 - favorece el SEO (Google) vs _desktop-first_.
 - es más difícil simplificar una versión desktop a mobile que pasar de mobile a desktop. Diseñar para mobile suele ser más difícil, por lo que tomamos decisiones sobre qué contenido es el más importante al principio, ahorrando tiempo después.
 - al cargar inicialmente sólo el CSS necesario para mobile, la carga del sitio es más rápida.
